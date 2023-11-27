@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import './Feed.css';
-import TweetBox from './TweetBox';
-import Post from './Post';
-import db from './firebase';
+import TweetBox from '../TweetBox/TweetBox';
+import Post from '../Post/Post';
+import db from '../../firebase';
 import { collection, getDocs } from 'firebase/firestore/lite';
 
 function Feed() {
@@ -21,7 +21,6 @@ function Feed() {
         
     }, []);
 
-    console.log(posts);
 
   return (
     <div className='feed'>

@@ -5,8 +5,12 @@
 
 .App {
   display: flex;
+}
+
+/* .App {
+  display: flex;
   height: 100vh;
   max-width: 1300px;
   margin-inline: auto;
   padding: 0 10px;
-}
+} */

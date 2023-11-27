@@ -1,7 +1,7 @@
 import { Avatar, Button } from '@mui/material'
 import React from 'react'
 import './TweetBox.css'
-import db from './firebase';
+import db from '../../firebase';
 import { collection, addDoc } from 'firebase/firestore/lite';
 
 function TweetBox() {
@@ -34,13 +34,6 @@ function TweetBox() {
                 value={tweetMessage} 
                 placeholder='What is happening ?' />
             </div>
-            <input
-                value={tweetImage}
-                onChange={(e) => {setTweetImage(e.target.value)}}
-                className='tweetBox__imageInput'
-                placeholder='Option: Enter image URL'
-                type='text'>
-            </input>
             <Button onClick={sendTweet} className='tweetBox__tweetButton'>Tweet</Button>
         </form>
 

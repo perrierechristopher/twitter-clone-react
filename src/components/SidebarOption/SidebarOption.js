@@ -1,5 +1,6 @@
 import React from 'react';
 import "./SidebarOption.css";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
